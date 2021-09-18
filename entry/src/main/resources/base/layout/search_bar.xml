@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorSubBackground">
+
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_search_bar"
+        ohos:bottom_margin="$float:componentPadding"
+        ohos:end_margin="$float:defaultMargin"
+        ohos:start_margin="$float:defaultMargin"
+        ohos:top_margin="$float:componentPadding">
+
+        <Image
+            ohos:id="$+id:searchImage"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$media:searchIcon"
+            ohos:start_margin="$float:defaultMargin"
+            ohos:vertical_center="true"/>
+
+        <TextField
+            ohos:id="$+id:searchTextField"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="$float:componentPadding"
+            ohos:element_cursor_bubble="#00000000"
+            ohos:end_of="$id:searchImage"
+            ohos:end_padding="$float:defaultPadding"
+            ohos:hint="$string:search"
+            ohos:multiple_lines="false"
+            ohos:start_padding="$float:defaultPadding"
+            ohos:text_alignment="vertical_center"
+            ohos:text_size="16fp"
+            ohos:top_padding="$float:componentPadding"
+            ohos:vertical_center="true"/>
+    </DependentLayout>
+
+</DirectionalLayout>

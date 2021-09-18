@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorSubBackground">
+
+    <include
+        ohos:id="$+id:title_bar"
+        ohos:height="$float:defaultHeight"
+        ohos:width="match_parent"
+        ohos:align_parent_top="true"
+        ohos:layout="$layout:title_bar"/>
+
+    <include
+        ohos:id="$+id:search_bar"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:below="$id:title_bar"
+        ohos:layout="$layout:search_bar"/>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:below="$id:search_bar"
+        ohos:bottom_margin="$float:defaultHeight"
+        ohos:bottom_padding="$float:componentPadding"
+        ohos:orientation="vertical"
+        ohos:top_padding="$float:componentPadding">
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+            <ListContainer
+                ohos:id="$+id:categoryList"
+                ohos:height="match_parent"
+                ohos:width="110vp"
+                ohos:orientation="vertical"
+                ohos:start_padding="$float:defaultPadding">
+            </ListContainer>
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="1vp"
+                ohos:background_element="$color:list_divider_color"
+                ohos:top_padding="$float:dividerPadding"/>
+            <ScrollView
+                ohos:id="$+id:itemListScroll"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:orientation="vertical"
+                ohos:rebound_effect="true"
+                ohos:start_margin="$float:componentPadding"
+                ohos:weight="1">
+
+                <DirectionalLayout
+                    ohos:id="$+id:itemLayout"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:orientation="vertical">
+
+                    <com.example.myapplication.view.GridView
+                        ohos:id="$+id:itemLayoutGrid"
+                        ohos:height="match_content"
+                        ohos:width="match_parent"
+                        ohos:columnMargin="$float:componentPadding"
+                        ohos:column_count="2"
+                        ohos:end_padding="$float:defaultPadding"
+                        ohos:orientation="horizontal"
+                        ohos:rowMargin="$float:componentPadding"
+                        ohos:row_count="1"
+                        ohos:start_padding="$float:componentPadding"
+                        ohos:top_margin="$float:componentPadding">
+                    </com.example.myapplication.view.GridView>
+
+                    <DirectionalLayout
+                        ohos:id="$+id:itemChildLayout"
+                        ohos:height="match_content"
+                        ohos:width="match_parent"
+                        ohos:orientation="vertical">
+                    </DirectionalLayout>
+                </DirectionalLayout>
+            </ScrollView>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:id="$+id:bottom_tab"
+        ohos:height="$float:defaultHeight"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:alignment="vertical_center"
+        ohos:background_element="$color:colorSubBackground"
+        ohos:left_padding="$float:defaultPadding"
+        ohos:right_padding="$float:defaultPadding">
+
+        <DirectionalLayout
+            ohos:id="$+id:bottom_tabMenu"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"/>
+    </DirectionalLayout>
+</DependentLayout>

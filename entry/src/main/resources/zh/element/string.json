@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "describe",
+      "value": "描述"
+    },
+    {
+      "name": "category",
+      "value": "分类"
+    },
+    {
+      "name": "itemChild",
+      "value": "子类"
+    },
+    {
+      "name": "item",
+      "value": "小项"
+    },
+    {
+      "name": "search",
+      "value": "搜索..."
+    },
+    {
+      "name": "you_search",
+      "value": "你搜索了 "
+    },
+    {
+      "name": "you_clicked",
+      "value": "你点击了 "
+    },
+    {
+      "name": "tab",
+      "value": "选项"
+    },
+    {
+      "name": "more",
+      "value": "更多"
+    }
+  ]
+}

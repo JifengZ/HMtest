@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="60vp"
+    ohos:alpha="0"
+    ohos:top_margin="$float:defaultMargin">
+
+    <Image
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_item_grid_per"/>
+
+    <Text
+        ohos:id="$+id:itemChildPerGridPerText"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:bottom_padding="$float:componentPadding"
+        ohos:multiple_lines="true"
+        ohos:text_alignment="center"
+        ohos:text_size="16vp"
+        ohos:top_padding="$float:componentPadding"/>
+</DirectionalLayout>

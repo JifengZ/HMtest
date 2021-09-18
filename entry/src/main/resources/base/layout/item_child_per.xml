@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:end_margin="$float:defaultMargin"
+    ohos:orientation="vertical"
+    ohos:start_margin="$float:componentPadding"
+    ohos:top_margin="$float:componentPadding">
+
+    <DependentLayout
+        ohos:height="40vp"
+        ohos:width="match_parent"
+        ohos:bottom_margin="-3vp"
+        ohos:top_margin="$float:defaultMargin">
+        <Text
+            ohos:id="$+id:itemChildPerText"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_bottom="true"
+            ohos:align_parent_start="true"
+            ohos:bottom_margin="$float:defaultMargin"
+            ohos:multiple_lines="true"
+            ohos:text_size="$float:default_text_size"/>
+        <Text
+            ohos:id="$+id:itemChildPerMore"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_bottom="true"
+            ohos:align_parent_end="true"
+            ohos:bottom_margin="$float:defaultMargin"
+            ohos:element_end="$media:rightIcon"
+            ohos:element_padding="4vp"
+            ohos:text="$string:more"
+            ohos:text_alignment="center"
+            ohos:text_color="$color:appbar_subtitle_color"
+            ohos:text_size="$float:appbar_subtitle_text_size"
+            ohos:visibility="hide"/>
+    </DependentLayout>
+
+    <com.example.myapplication.view.GridView
+        ohos:id="$+id:itemChildPerGrid"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:columnMargin="0"
+        ohos:column_count="3"
+        ohos:orientation="horizontal"
+        ohos:rowMargin="$float:componentPadding"
+        ohos:row_count="1">
+    </com.example.myapplication.view.GridView>
+</DirectionalLayout>

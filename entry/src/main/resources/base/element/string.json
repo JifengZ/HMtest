@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Category Page Feature Ability"
+    },
+    {
+      "name": "describe",
+      "value": "describe"
+    },
+    {
+      "name": "category",
+      "value": "Category"
+    },
+    {
+      "name": "itemChild",
+      "value": "ItemChild"
+    },
+    {
+      "name": "item",
+      "value": "Item"
+    },
+    {
+      "name": "search",
+      "value": "search..."
+    },
+    {
+      "name": "you_search",
+      "value": "You search "
+    },
+    {
+      "name": "you_clicked",
+      "value": "You clicked "
+    },
+    {
+      "name": "tab",
+      "value": "Tab"
+    },
+    {
+      "name": "more",
+      "value": "more"
+    }
+  ]
+}
